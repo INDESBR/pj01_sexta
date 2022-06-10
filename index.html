@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: green;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            background-color: rgb(1, 37, 68);
+            height: 80vh;
+            width: 60vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+            
+        }
+
+        .linha {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .circulo{
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            background-color: aqua;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        span {
+            color: white;
+            font-weight: bold;
+            font-size: 100px;
+        }
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+
+        .imagem {
+            display: grid;
+            place-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="linha">
+            <div class="box imagem">
+                <img src="./papel.png" alt="">
+            </div>
+            <div class="placar">
+                <span>0</span>
+                <span>x</span>
+                <span>0</span>
+            </div>
+            <div class="box imagem">
+                <img src="./papel.png" alt="">
+            </div>
+        </div>
+        <div class="linha">
+            <div class="circulo imagem">
+                <img src="./pedra.png" alt="">
+            </div>
+            <div class="circulo imagem">
+                <img src="./papel.png" alt="">
+            </div>
+            <div class="circulo imagem">
+                <img src="./tesoura.png" alt="">
+            </div>
+        </div>
+        <div class="linha">
+            <button class="btn" >Jogar</button>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
